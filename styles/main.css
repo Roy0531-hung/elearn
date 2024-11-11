@@ -319,4 +319,53 @@ body {
         background-color: var(--bg-color);
         color: var(--text-color);
     }
+}
+
+/* 快速學習區樣式 */
+.learning-videos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.video-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 20px 0;
+}
+
+.video-selectors {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; /* 允許換行 */
+    justify-content: center;
+    gap: 10px; /* 按鈕之間的間距 */
+}
+
+.video-selector-btn {
+    padding: 10px 15px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    flex: 1 1 150px; /* 使按鈕可伸縮，最小寬度 150px */
+}
+
+.video-selector-btn:hover {
+    background: #0056b3; /* 懸停時的顏色 */
+}
+
+/* 響應式設計 */
+@media (max-width: 768px) {
+    .video-selectors {
+        flex-direction: column; /* 在小螢幕上改為垂直排列 */
+        align-items: stretch; /* 按鈕寬度填滿 */
+    }
+
+    .video-selector-btn {
+        width: 100%; /* 按鈕在小螢幕上寬度為 100% */
+    }
 } 
