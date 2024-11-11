@@ -125,4 +125,13 @@ document.addEventListener('DOMContentLoaded', () => {
         };
         block.appendChild(copyButton);
     });
+
+    // 新增 showVideo 函數
+    function showVideo(videoUrl) {
+        const videoPlayer = document.getElementById('videoPlayer');
+        if (videoPlayer) {
+            videoPlayer.src = videoUrl;
+            videoPlayer.play(); // 自動播放影片
+        }
+    }
 }); 
