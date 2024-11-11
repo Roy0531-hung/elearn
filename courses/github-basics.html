@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub 基礎操作 - 程式學習平台</title>
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/course.css">
+</head>
+<body>
+    <!-- 導航欄 -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">程式學習平台</div>
+            <button class="menu-toggle" aria-label="選單">☰</button>
+            <ul class="nav-links">
+                <li><a href="../index.html">首頁</a></li>
+                <li><a href="../index.html#cursor">Cursor教學</a></li>
+                <li><a href="../index.html#github">GitHub使用</a></li>
+                <li><a href="../index.html#vercel">Vercel部署</a></li>
+                <li><a href="../index.html#contact">聯絡我們</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 課程內容 -->
+    <div class="course-container">
+        <aside class="course-sidebar">
+            <div class="course-outline">
+                <h3>課程大綱</h3>
+                <ul>
+                    <li><a href="#intro" class="active">GitHub 簡介</a></li>
+                    <li><a href="#setup">環境設定</a></li>
+                    <li><a href="#basic-commands">基本指令</a></li>
+                    <li><a href="#workflow">工作流程</a></li>
+                    <li><a href="#practice">實作練習</a></li>
+                </ul>
+            </div>
+        </aside>
+
+        <main class="course-content">
+            <h1>GitHub 基礎操作</h1>
+            
+            <section id="intro" class="course-section">
+                <h2>GitHub 簡介</h2>
+                <p>GitHub 是全球最大的程式碼託管平台，提供版本控制和協作功能，是開發者必備的工具。</p>
+                <div class="feature-list">
+                    <div class="feature-item">
+                        <h3>版本控制</h3>
+                        <p>追蹤和管理程式碼的變更歷史</p>
+                    </div>
+                    <div class="feature-item">
+                        <h3>協作開發</h3>
+                        <p>多人同時開發專案的完美解決方案</p>
+                    </div>
+                    <div class="feature-item">
+                        <h3>程式碼託管</h3>
+                        <p>安全可靠的雲端程式碼儲存空間</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="setup" class="course-section">
+                <h2>環境設定</h2>
+                <div class="installation-steps">
+                    <div class="step">
+                        <h3>步驟 1：安裝 Git</h3>
+                        <p>首先需要在本機安裝 Git 版本控制系統</p>
+                        <div class="code-block">
+                            <pre><code># Windows 使用者可以從官網下載安裝檔
+# Mac 使用者可以使用 Homebrew 安裝
+brew install git</code></pre>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <h3>步驟 2：註冊 GitHub 帳號</h3>
+                        <p>前往 GitHub 官網註冊帳號</p>
+                        <a href="https://github.com/signup" class="button" target="_blank">註冊帳號</a>
+                    </div>
+                    <div class="step">
+                        <h3>步驟 3：設定 Git</h3>
+                        <div class="code-block">
+                            <pre><code>git config --global user.name "您的名字"
+git config --global user.email "您的信箱"</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="basic-commands" class="course-section">
+                <h2>基本指令</h2>
+                <div class="commands-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>指令</th>
+                                <th>說明</th>
+                                <th>範例</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>git init</td>
+                                <td>初始化 Git 倉庫</td>
+                                <td><code>git init</code></td>
+                            </tr>
+                            <tr>
+                                <td>git clone</td>
+                                <td>複製遠端倉庫</td>
+                                <td><code>git clone URL</code></td>
+                            </tr>
+                            <tr>
+                                <td>git add</td>
+                                <td>加入追蹤檔案</td>
+                                <td><code>git add .</code></td>
+                            </tr>
+                            <tr>
+                                <td>git commit</td>
+                                <td>提交變更</td>
+                                <td><code>git commit -m "訊息"</code></td>
+                            </tr>
+                            <tr>
+                                <td>git push</td>
+                                <td>推送至遠端</td>
+                                <td><code>git push origin main</code></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <section id="workflow" class="course-section">
+                <h2>工作流程</h2>
+                <div class="workflow-steps">
+                    <div class="workflow-item">
+                        <h3>1. 建立/複製專案</h3>
+                        <img src="../images/github/basics/create-repo.jpg" alt="建立專案">
+                        <p>建立新的 Git 倉庫或複製現有專案</p>
+                    </div>
+                    <div class="workflow-item">
+                        <h3>2. 開發功能</h3>
+                        <img src="../images/github/development.jpg" alt="開發功能">
+                        <p>在本地進行程式碼的編寫和測試</p>
+                    </div>
+                    <div class="workflow-item">
+                        <h3>3. 提交變更</h3>
+                        <img src="../images/github/commit.jpg" alt="提交變更">
+                        <p>將變更提交到版本控制系統</p>
+                    </div>
+                    <div class="workflow-item">
+                        <h3>4. 推送與合併</h3>
+                        <img src="../images/github/push-merge.jpg" alt="推送合併">
+                        <p>將變更推送到遠端並進行合併</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="practice" class="course-section">
+                <h2>實作練習</h2>
+                <div class="practice-exercise">
+                    <h3>練習 1：建立第一個 GitHub 專案</h3>
+                    <p>跟著以下步驟來建立和管理您的第一個 GitHub 專案：</p>
+                    <ol class="exercise-steps">
+                        <li>在 GitHub 上建立新的倉庫</li>
+                        <li>複製倉庫到本地端</li>
+                        <li>新增一個簡單的 README.md 檔案</li>
+                        <li>提交並推送變更</li>
+                    </ol>
+                    <div class="exercise-demo">
+                        <video controls>
+                            <source src="../videos/github-basic-demo.mp4" type="video/mp4">
+                            您的瀏覽器不支援影片播放
+                        </video>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- 頁尾 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>關於我們</h3>
+                    <p>致力於提供優質的程式學習資源</p>
+                </div>
+                <div class="footer-section">
+                    <h3>快速連結</h3>
+                    <ul>
+                        <li><a href="../index.html#cursor">Cursor教學</a></li>
+                        <li><a href="../index.html#github">GitHub使用</a></li>
+                        <li><a href="../index.html#vercel">Vercel部署</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>聯絡資訊</h3>
+                    <p>Email: contact@example.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 程式學習平台. 版權所有.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html> 

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>程式學習平台</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <meta name="description" content="專業的程式學習平台，提供 Cursor、GitHub 和 Vercel 的完整教學資源">
+    <meta name="keywords" content="程式學習, Cursor, GitHub, Vercel, 網站部署">
+    <meta property="og:title" content="程式學習平台">
+    <meta property="og:description" content="專業的程式學習平台">
+    <meta property="og:image" content="images/common/og-image.jpg">
+    <!-- 預加載關鍵資源 -->
+    <link rel="preload" href="styles/main.css" as="style">
+    <link rel="preload" href="images/common/hero-bg.jpg" as="image">
+</head>
+<body>
+    <!-- 導航欄 -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">程式學習平台</div>
+            <button class="menu-toggle" aria-label="選單">☰</button>
+            <ul class="nav-links">
+                <li><a href="#home">首頁</a></li>
+                <li><a href="#cursor">Cursor教學</a></li>
+                <li><a href="#github">GitHub使用</a></li>
+                <li><a href="#vercel">Vercel部署</a></li>
+                <li><a href="#contact">聯絡我們</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 首頁區塊 -->
+    <section id="home" class="hero">
+        <div class="container">
+            <h1>歡迎來到程式學習平台</h1>
+            <p>專注於Cursor、GitHub和Vercel的完整學習資源</p>
+            <div class="cta-buttons">
+                <a href="#cursor" class="cta-button">開始學習</a>
+                <a href="#contact" class="cta-button secondary">聯絡我們</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cursor教學區塊 -->
+    <section id="cursor" class="course-section">
+        <div class="container">
+            <h2>Cursor 教學</h2>
+            <div class="course-grid">
+                <div class="course-card">
+                    <img src="images/cursor/basics/intro.jpg" alt="Cursor基礎">
+                    <h3>Cursor 基礎入門</h3>
+                    <p>學習Cursor的基本功能和操作方式</p>
+                    <a href="courses/cursor-basics.html" class="button">開始學習</a>
+                </div>
+                <div class="course-card">
+                    <img src="images/cursor/advanced/intro.jpg" alt="Cursor進階">
+                    <h3>Cursor 進階應用</h3>
+                    <p>探索Cursor的進階功能和使用技巧</p>
+                    <a href="courses/cursor-advanced.html" class="button">開始學習</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GitHub使用區塊 -->
+    <section id="github" class="course-section">
+        <div class="container">
+            <h2>GitHub 使用教學</h2>
+            <div class="course-grid">
+                <div class="course-card">
+                    <img src="images/github/basics/intro.jpg" alt="GitHub基礎">
+                    <h3>GitHub 基礎操作</h3>
+                    <p>學習GitHub的基本概念和操作方法</p>
+                    <a href="courses/github-basics.html" class="button">開始學習</a>
+                </div>
+                <div class="course-card">
+                    <img src="images/github/advanced/intro.jpg" alt="GitHub進階">
+                    <h3>GitHub 進階功能</h3>
+                    <p>深入了解GitHub的進階功能和團隊協作</p>
+                    <a href="courses/github-advanced.html" class="button">開始學習</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vercel部署區塊 -->
+    <section id="vercel" class="course-section">
+        <div class="container">
+            <h2>Vercel 部署教學</h2>
+            <div class="course-grid">
+                <div class="course-card">
+                    <img src="images/vercel/basics/intro.jpg" alt="Vercel基礎">
+                    <h3>Vercel 基礎部署</h3>
+                    <p>學習如何使用Vercel部署網站</p>
+                    <a href="courses/vercel-basics.html" class="button">開始學習</a>
+                </div>
+                <div class="course-card">
+                    <img src="images/vercel/advanced/intro.jpg" alt="Vercel進階">
+                    <h3>Vercel 進階設定</h3>
+                    <p>探索Vercel的進階功能和最佳實踐</p>
+                    <a href="courses/vercel-advanced.html" class="button">開始學習</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 聯絡我們區塊 -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>聯絡我們</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>有任何問題？</h3>
+                    <p>歡迎隨時與我們聯繫，我們會盡快回覆您的問題。</p>
+                </div>
+                <form class="contact-form">
+                    <input type="text" placeholder="您的姓名" required>
+                    <input type="email" placeholder="電子郵件" required>
+                    <textarea placeholder="您的訊息" rows="5" required></textarea>
+                    <button type="submit" class="button">送出訊息</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- 頁尾 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>關於我們</h3>
+                    <p>致力於提供優質的程式學習資源</p>
+                </div>
+                <div class="footer-section">
+                    <h3>快速連結</h3>
+                    <ul>
+                        <li><a href="#cursor">Cursor教學</a></li>
+                        <li><a href="#github">GitHub使用</a></li>
+                        <li><a href="#vercel">Vercel部署</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>聯絡資訊</h3>
+                    <p>Email: contact@example.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 程式學習平台. 版權所有.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html> 

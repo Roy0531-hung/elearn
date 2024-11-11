@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursor 基礎入門 - 程式學習平台</title>
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/course.css">
+</head>
+<body>
+    <!-- 導航欄 -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">程式學習平台</div>
+            <button class="menu-toggle" aria-label="選單">☰</button>
+            <ul class="nav-links">
+                <li><a href="../index.html">首頁</a></li>
+                <li><a href="../index.html#cursor">Cursor教學</a></li>
+                <li><a href="../index.html#github">GitHub使用</a></li>
+                <li><a href="../index.html#vercel">Vercel部署</a></li>
+                <li><a href="../index.html#contact">聯絡我們</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 課程內容 -->
+    <div class="course-container">
+        <aside class="course-sidebar">
+            <div class="course-outline">
+                <h3>課程大綱</h3>
+                <ul>
+                    <li><a href="#intro" class="active">Cursor 簡介</a></li>
+                    <li><a href="#installation">安裝與設定</a></li>
+                    <li><a href="#basic-features">基本功能介紹</a></li>
+                    <li><a href="#shortcuts">快捷鍵操作</a></li>
+                    <li><a href="#practice">實作練習</a></li>
+                </ul>
+            </div>
+        </aside>
+
+        <main class="course-content">
+            <h1>Cursor 基礎入門</h1>
+            
+            <section id="intro" class="course-section">
+                <h2>Cursor 簡介</h2>
+                <p>Cursor 是一個強大的程式編輯器，結合了 AI 輔助功能，能夠幫助開發者更高效地編寫程式碼。</p>
+                <div class="feature-list">
+                    <div class="feature-item">
+                        <h3>AI 輔助編程</h3>
+                        <p>透過 AI 技術提供智能代碼補全和建議</p>
+                    </div>
+                    <div class="feature-item">
+                        <h3>即時錯誤檢測</h3>
+                        <p>自動檢查並提示程式碼中的錯誤</p>
+                    </div>
+                    <div class="feature-item">
+                        <h3>多語言支援</h3>
+                        <p>支援多種程式語言和框架</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="installation" class="course-section">
+                <h2>安裝與設定</h2>
+                <div class="installation-steps">
+                    <div class="step">
+                        <h3>步驟 1：下載安裝檔</h3>
+                        <p>前往 Cursor 官網下載適合您作業系統的版本</p>
+                        <a href="https://cursor.sh" class="button" target="_blank">前往下載</a>
+                    </div>
+                    <div class="step">
+                        <h3>步驟 2：執行安裝</h3>
+                        <p>依照安裝精靈的指示完成安裝過程</p>
+                        <div class="code-block">
+                            <pre><code>// Windows 使用者可以直接執行 .exe 檔案
+// Mac 使用者將 .dmg 檔案拖曳至應用程式資料夾</code></pre>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <h3>步驟 3：初始設定</h3>
+                        <p>首次啟動時進行基本設定</p>
+                        <ul class="setup-list">
+                            <li>選擇您偏好的主題</li>
+                            <li>設定字型和大小</li>
+                            <li>配置快捷鍵</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section id="basic-features" class="course-section">
+                <h2>基本功能介紹</h2>
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <h3>智能代碼補全</h3>
+                        <img src="../images/cursor/basics/code-completion.jpg" alt="代碼補全示例">
+                        <p>輸入時自動提供相關的代碼建議</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>AI 代碼生成</h3>
+                        <img src="../images/cursor/basics/ai-generation.jpg" alt="AI生成示例">
+                        <p>使用自然語言描述來生成代碼</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="shortcuts" class="course-section">
+                <h2>快捷鍵操作</h2>
+                <div class="shortcuts-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>功能</th>
+                                <th>Windows</th>
+                                <th>Mac</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>儲存檔案</td>
+                                <td>Ctrl + S</td>
+                                <td>⌘ + S</td>
+                            </tr>
+                            <tr>
+                                <td>尋找</td>
+                                <td>Ctrl + F</td>
+                                <td>⌘ + F</td>
+                            </tr>
+                            <tr>
+                                <td>AI 輔助</td>
+                                <td>Ctrl + K</td>
+                                <td>⌘ + K</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <section id="practice" class="course-section">
+                <h2>實作練習</h2>
+                <div class="practice-exercise">
+                    <h3>練習 1：基本編輯操作</h3>
+                    <p>跟著以下步驟來熟悉 Cursor 的基本操作：</p>
+                    <ol class="exercise-steps">
+                        <li>建立新檔案</li>
+                        <li>使用 AI 輔助生成一個簡單的函數</li>
+                        <li>使用快捷鍵進行代碼格式化</li>
+                        <li>儲存並執行程式碼</li>
+                    </ol>
+                    <div class="exercise-demo">
+                        <video controls>
+                            <source src="../videos/cursor-basic-demo.mp4" type="video/mp4">
+                            您的瀏覽器不支援影片播放
+                        </video>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- 頁尾 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>關於我們</h3>
+                    <p>致力於提供優質的程式學習資源</p>
+                </div>
+                <div class="footer-section">
+                    <h3>快速連結</h3>
+                    <ul>
+                        <li><a href="../index.html#cursor">Cursor教學</a></li>
+                        <li><a href="../index.html#github">GitHub使用</a></li>
+                        <li><a href="../index.html#vercel">Vercel部署</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>聯絡資訊</h3>
+                    <p>Email: contact@example.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 程式學習平台. 版權所有.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html> 
